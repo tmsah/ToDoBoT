@@ -35,11 +35,13 @@ function doPost(e) {
   var reply_messages = [""];
   if (user_message　== 'なう') { //全員の作業中のToDoを返す
     reply_messages = allToDo(baseSheet);
+  } else if (user_message == 'タスク') {    //タスク表を返す  
+    reply_messages = ["https://docs.google.com/spreadsheets/d/18UT_i1sobL5dX7NzoYOuCxAIT3TcHVqQoJZ6T8NnHdA/edit#gid=0"];    
   } else if (user_message == 'おさる') {    //ホームページのURLを返す
     reply_messages = ["http://www.osarunomori.jp/"];
   }else {
     //説明を返す
-    reply_messages = ['「なう」で全員の作業中のToDo，「おさる」でホームページのURLを送ります．'];
+    reply_messages = ['"なう"で全員の作業中のToDo，"タスク"でタスク表，"おさる"でホームページのURLを送ります．'];
   }
 
   // メッセージを返信
