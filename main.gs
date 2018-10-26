@@ -8,6 +8,7 @@ var SP_ID = PROPERTIES.getProperty('SP_ID') //プロパティに設定した、�
 var LINE_ACCESS_TOKEN = PROPERTIES.getProperty('LINE_ACCESS_TOKEN');
 var line_endpoint = 'https://api.line.me/v2/bot/message/reply'; 
 var WEB_HOOK_URL = PROPERTIES.getProperty("WEB_HOOK_URL") //Google Apps Scriptで作成したアプリのURL
+var task_sheet = PROPERTIES.getProperty('taskSheet');
 
 function doGet() {
   return HtmlService.createTemplateFromFile("ToDo管理").evaluate();
@@ -36,7 +37,7 @@ function doPost(e) {
   if (user_message　== 'なう') { //全員の作業中のToDoを返す
     reply_messages = allToDo(baseSheet);
   } else if (user_message == 'タスク') {    //タスク表を返す  
-    reply_messages = ["https://docs.google.com/spreadsheets/d/18UT_i1sobL5dX7NzoYOuCxAIT3TcHVqQoJZ6T8NnHdA/edit#gid=0"];    
+    reply_messages = [task_sheet];    
   } else if (user_message == 'おさる') {    //ホームページのURLを返す
     reply_messages = ["http://www.osarunomori.jp/"];
   }else {
