@@ -31,5 +31,6 @@ __注意！__
 
 # Others
 - "アプリケーションにアクセスできるユーザー"を"全員(匿名ユーザーを含む)"に設定しておかないと，そもそもLINEがこのコードにアクセスできないって事態に陥る．  
+- コーディングしてリリースする度に"プロジェクトバージョン"を"新規作成"にしてバージョンをあげてやらないと変更が反映されないから注意．
 - GASをGitで管理するための[Chomeの拡張](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo)を使うと便利．[使い方](https://tadaken3.hatenablog.jp/entry/gas-github)と[ソースコード](https://github.com/leonhartX/gas-github)も見れるよ．
 - 初心者向けにめちゃめちゃ丁寧に説明書いたつもりだけど，git cloneできる時点で初心者じゃないよね．
