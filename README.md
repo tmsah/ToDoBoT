@@ -12,7 +12,7 @@ __注意！__
 - "Google Apps Script"から開く(そんなもの無いって人はダウンロード方法を調べて調達して下さい．)．  
 - メニューの"ファイル"から"プロジェクトのプロパティ"を選択．  
 - "スクリプトのプロパティ"を開き，それぞれ"プロパティ""値"の順で以下を入力し，最後に"保存"を押す．
- - "WEB_HOCK_URL": アプリのURL(後で詳しく述べます．)．  
+ - "WEB_HOOK_URL": アプリのURL(後で詳しく述べます．)．  
  - "LINE_ACCESS_TOKEN": "LINE Developers"側で発行した，作りたいBotの"アクセストークン"を丸々コピーして貼り付ける．  
  - "SP_ID": 使いたいGoogleSpreadSheetのID(URLの"/d/"の直後から"/edit"の直前までの文字列)を入力．  
 - メニューから"公開"を選択し，"ウェブアプリケーションとして導入"を選ぶ．  
@@ -30,5 +30,6 @@ __注意！__
 - "Webhook URL"に自分のアプリのURLを入力．
 
 # Others
-- "アプリケーションにアクセスできるユーザー"を"全員(匿名ユーザーを含む)"に設定しておかないと，そもそもLINEがこのコードにアクセスできないって事態に陥る．
-- 初心者向けにめちゃめちゃ丁寧に説明書いたけど，git cloneできる時点で初心者じゃないよね．
+- "アプリケーションにアクセスできるユーザー"を"全員(匿名ユーザーを含む)"に設定しておかないと，そもそもLINEがこのコードにアクセスできないって事態に陥る．  
+- GASをGitで管理するための[Chomeの拡張](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo)を使うと便利．[使い方](https://tadaken3.hatenablog.jp/entry/gas-github)と[ソースコード](https://github.com/leonhartX/gas-github)も見れるよ．
+- 初心者向けにめちゃめちゃ丁寧に説明書いたつもりだけど，git cloneできる時点で初心者じゃないよね．
