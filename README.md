@@ -1,7 +1,14 @@
-# ToDoBoT(not yet)
-GoogleSpreadSheetに書いてあるToDoをLineBotでインタラクティブに確認できる(まだ動きません．)．
+# ToDoBoT
+GoogleSpreadSheetに書いてあるToDoをLineBotでインタラクティブに確認できる．
 
 # How to use
+- "なう"で全員の作業中のToDoを表示．
+- "タスク"でタスク表を表示．
+- "おさる"で[おさるの森](http://www.osarunomori.jp)のホームページのURLを表示．
+
+ToDoを記述するGoogleSpreadSheetの仕様に関してはもう少し待ってね(これが分からないと使えないと思うけど．)．  
+待ちきれない人はソースコード読めば最低限は分かるから勝手にやって．
+# How to develop
 __注意！__  
 以下の説明はこのBotの最新版リリース時の環境における手順です．  
 あなたが動かす時にはgoogle，LineのWebページにおけるUIや仕様が多少変わっているかもしれませんのでその時は自力で何とかして下さい(としか言えません．)．  
