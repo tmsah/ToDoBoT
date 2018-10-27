@@ -3,7 +3,7 @@ GoogleSpreadSheetに書いてあるToDoをLineBotでインタラクティブに�
 
 # How to use
 - "なう"で全員の作業中のToDoを表示．
-- "タスク"でタスク表を表示．
+- "タスク"でToDo表を表示．
 - "おさる"で[おさるの森](http://www.osarunomori.jp)のホームページのURLを表示．
 
 ToDoを記述するGoogleSpreadSheetの仕様に関してはもう少し待ってね(これが分からないと使えないと思うけど．)．  
