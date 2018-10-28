@@ -42,7 +42,7 @@ function doPost(e) {
     reply_messages = ["http://www.osarunomori.jp/"];
   }else {
     //説明を返す
-    reply_messages = ['"なう"で全員の作業中のToDo，"タスク"でタスク表，"おさる"でホームページのURLを送ります．'];
+    reply_messages = ['"なう"で全員の作業中のToDo，"タスク"でToDo表，"おさる"でホームページのURLを送ります．'];
   }
 
   // メッセージを返信
@@ -74,5 +74,8 @@ function allToDo(baseSheet){
       reply_messages = [reply_messages + baseSheet.getRange(i,1).getValue() + ", " + baseSheet.getRange(i,6).getValue() + "\n"];
       }
     }
+  if (reply_messages == ""){
+    reply_messages = ["現在作業中のToDoはありません．"];
+  }
   return reply_messages;
 }
